@@ -1,0 +1,28 @@
+/* Establece un color de fondo en la mitad derecha */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: aqua;
+}
+
+/* Agrega un fondo de color en la mitad derecha */
+.form-container {
+    background-color: rgb(37, 37, 231); /* Color de fondo */
+    width: 50%; /* Ancho de la parte derecha */
+    padding: 20px; /* Espaciado interior de la parte derecha */
+}
+
+/* Agrega una imagen de fondo en la mitad izquierda */
+.container:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    left: 0;
+    width: 50%; /* Ancho de la parte izquierda */
+    background: url('images/login-fondo.jpg') left top no-repeat;
+    background-size: cover;
+}
